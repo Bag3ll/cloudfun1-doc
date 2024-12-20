@@ -1,8 +1,5 @@
 #!/bin/bash
 
-#
-
-
 # update
 sudo apt update -y
 
@@ -44,6 +41,6 @@ sudo sed -i 's/bindIp: 127.0.0.1/bindIp: 0.0.0.0/' /etc/mongod.conf
 sudo systemctl restart mongod
 
 # enable MongoDB on startup
-echo enable mongod ...
+# echo enable mongod ...
 sudo systemctl enable mongod
-echo done!
+# echo done!
